@@ -4,9 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact US</title>
+    <title>Gallery of SRS</title>
     <link rel="stylesheet" href="about.css">
 </head>
+
+<style>
+    div.gallery {
+      margin: 70px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 270px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 10px;
+      text-align: center;
+    }
+    </style>
+
 <body>
 
     <header>
@@ -22,11 +46,36 @@
     <br><br><br><br><br><br><br><br><br><br>
     <h1 class="pppp">SRS DIGITAL PRESS </h1>
     </div>
-    </header>
-    <video width="800" height="500" controls>
+    
+
+    <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+          <img src="images/g1.jpeg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">demo1</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img src="images/g2.jpeg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">demo2</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img src="images/g3.jpeg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">demo3</div>
+      </div>
+
+      <video width="700" height="500"  controls>
         <source src="videos/intro.mp4" type="video/mp4">
-      Your browser does not support the video tag.
       </video>
+      
+
+    </header>
+    
 
 
 </head>
