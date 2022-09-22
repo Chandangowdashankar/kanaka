@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SRS DIGITAL PRESS</title>
     <link rel="stylesheet" href="contact.css">
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
 </head>
 <body>
 
@@ -56,19 +56,19 @@
       <form>
       <h2>Send Message</h2>
       <div class="inputBox">
-      <input type="text" name="" required="required">
+      <input type="text" name="fullname" id="full" required="required">
       <span>Full Name</span>
       </div>
       <div class="inputBox">
-      <input type="text" name="" required="required">
+      <input type="text" name="Email" id="mail" required="required">
       <span>Email</span>
       </div>
       <div class="inputBox">
-      <input type="text" name="" required="required">
+      <input type="text" name="msg" id="msg" required="required">
       <span>type your message...</span>
       </div>
       <div class="inputBox">
-      <input type="submit" name="" value="send">
+      <input type="submit" name="" value="send" onclick="sendEmail()">
       </div>
       </form>
       </div>
@@ -80,15 +80,33 @@
     
     </header>
 
+     <script src=
+    "https://smtpjs.com/v3/smtp.js">
+     </script>
+
+     <script type="text/javascript">
+        console.log('submitted')
+        let fullname = document.getElementById("full").value
+        let email =document.getElementById("mail").value
+        console.log(fullname)
+        let meassge= document.getElementById("msg").value
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username : "chandangowdahs1999@gmail.com",
+        Password : "chandanmandya",
+        From: 'chandangowdahs1999@gmail.com',
+        To : "chandanshankar1999@gmail.com",
+        Body: "${fullname} ${email} ${msg}",
+    })
+      .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
+
 
    
 </head>
-<body>
 
-
-
-
-    
-    
-</body>
 </html>
