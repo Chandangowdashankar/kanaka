@@ -54,7 +54,9 @@
       </div>
       </div>
       <div class="contactForm">
-      <form>
+
+
+      <form action="mailto:srsdigitalpress@gmail.com" method="post" enctype="text/plain">
       <h2>Send Message</h2>
       <div class="inputBox">
       <input type="text" name="fullname" id="full" required="required">
@@ -66,10 +68,10 @@
       </div>
       <div class="inputBox">
       <input type="text" name="msg" id="msg" required="required">
-      <span>type your message...</span>
+      <span>Type your message...</span>
       </div>
       <div class="inputBox">
-      <input type="submit" name="" value="send" onclick="sendEmail()">
+      <input type="submit" name="" value="Send" >
       </div>
       </form>
       </div>
@@ -81,33 +83,6 @@
     
     </header>
 
-     <script src=
-    "https://smtpjs.com/v3/smtp.js">
-     </script>
-
-     <script type="text/javascript">
-        console.log('submitted')
-        let fullname = document.getElementById("full").value
-        let email =document.getElementById("mail").value
-        console.log(fullname)
-        let meassge= document.getElementById("msg").value
-    function sendEmail() {
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username : "chandangowdahs1999@gmail.com",
-        Password : "chandanmandya",
-        From: 'chandangowdahs1999@gmail.com',
-        To : "chandanshankar1999@gmail.com",
-        Body: "${fullname} ${email} ${msg}",
-    })
-      .then(function (message) {
-          alert("mail sent successfully")
-        });
-    }
-  </script>
-
-
-   
 </head>
 
 </html>
