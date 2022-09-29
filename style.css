@@ -3,7 +3,7 @@
 	padding: 0;
 }
 body {
-	background-image: url("/home/chandanshankar/Downloads/bg.jpg");
+	background-image: url("bg.jpg");
 	font-family: 'Poppins', sans-serif;
 	background-size: cover;
 }
