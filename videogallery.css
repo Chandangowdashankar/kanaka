@@ -5,6 +5,9 @@
 body {
 	font-family: 'Poppins', sans-serif;
 	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+	background-image: url("/home/chandanshankar/Downloads/bg.jpg");
+	font-family: 'Poppins', sans-serif;
+	background-size: cover;
     
 }
 .ppp{
@@ -52,7 +55,7 @@ header {
 }
 .nav-area li a:hover {
 	background: #fff;
-	color: #333;
+	color: rgb(192, 174, 174);
 }
 .logo {
 	float: left;
